@@ -1,0 +1,45 @@
+/* 480px */
+@media (max-width: 480px) {
+    .main{
+        padding: 32px 20px;
+    }
+    .section{
+        padding: 16px;
+    }
+    .form{
+        row-gap: 36px;
+    }
+    .form_section{
+        row-gap: 40px;
+    }
+    .input_section{
+        flex-direction: column;
+        row-gap: 36px;
+    }.map_section{
+        row-gap: 40px;
+    }
+    .map{
+        height: 200px;
+    }
+    .buttons_ul{
+        column-gap: 42px;
+    }
+}
+/* 376px */
+@media (max-width: 376px) {
+    .section{
+        gap: 48px;
+    }
+    .form{
+        row-gap: 24px;
+    }
+    .input_section{
+        flex-direction: column;
+        row-gap: 24px;
+    }.map_section{
+        row-gap: 24px;
+    }
+    .map{
+        height: 200px;
+    }
+}
