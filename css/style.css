@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #F30AEA;
+  --bg-color: #1C1325CC;
+  --border-color: #B052B5;
+  --text-white: #FFFFFF;
+  --text-placeholder: #9E8D9EB5;
+}
 .container{
     width: min(100%, 1440px);
     margin: auto;
@@ -18,8 +25,8 @@
   gap: 66px;
   padding: 40px;
   border-radius: 20px;
-  background-color: #1C1325CC;
-  border: 1px solid #B052B5C9;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
   margin: auto;
 }
 .form_section{
@@ -35,9 +42,8 @@ h2{
     font-size: 32px;
     line-height: 40px;
     letter-spacing: 4px;
-    vertical-align: middle;
     text-shadow: 2px 4px 4px #F90CEFB5;
-    color: #FFFFFF;
+    color: var(--text-white);
 }
 .form{
     display: flex;
@@ -59,11 +65,10 @@ input{
     height: 48px;
     border-radius: 8px;
     border-width: 1px;
-    border: 1px solid #B052B5;
+    border: 1px solid var(--border-color);
     padding: 11px;
     background: transparent;
-    width: 100%;
-    color: #FFFFFF;
+    color: var(--text-white);
 }
 input::placeholder{
     font-family: Poppins;
@@ -71,7 +76,7 @@ input::placeholder{
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0px;
-    color: #9E8D9EB5;
+    color: var(--text-placeholder);
 }
 .label{
     font-family: Poppins;
@@ -79,7 +84,7 @@ input::placeholder{
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: var(--text-white);
 }
 
 textarea {
@@ -89,26 +94,23 @@ textarea {
   border: 1px solid #B052B5;
   padding: 11px;
   background: transparent;
-  color: #fff;
   font-family: Poppins;
   font-size: 16px;
   resize: none;
-  color: #FFFFFF;
+  color: var(--text-white);
 }
 .submit_button{
     width: 100%;
     height: 64px;
-    top: 274px;
     border-radius: 16px;
-    background-color: #F30AEA;
+    background-color: var(--primary-color);
     border: none;
     font-family: Poppins;
     font-weight: 700;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0px;
-    vertical-align: middle;
-    color: #FFFFFF;
+    color: var(--text-white);
     cursor: pointer;
 }
 /* map section */
@@ -117,7 +119,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     row-gap: 72px;
-    width: 100%px;
+    width: 100%;
     flex: 1;
 }
 .buttons_ul{
@@ -129,15 +131,15 @@ textarea {
     height: 48px;
     border-radius: 8px;
     border-width: 2px;
-    background-color: #F30AEA;
-    border: 2px solid #FFFFFF;
+    background-color: var(--primary-color);
+    border: 2px solid var(--text-white);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 .icons{
-    color: #FFFFFF;
+    color: var(--text-white);
     font-size: 24px;
 }
 .map{
